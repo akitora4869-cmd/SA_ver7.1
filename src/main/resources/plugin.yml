@@ -1,0 +1,34 @@
+name: SkillArena
+version: '1.1.6'
+main: jp.skillarena.SkillArenaPlugin
+depend: [ProtocolLib]
+api-version: '1.20'
+author: SkillArena
+commands:
+  testbot:
+    description: Spawn and configure simulated party training bots
+    permission: skillarena.admin
+    usage: /testbot <spawn|clear|list|skills|set>
+  party:
+    description: Create and manage a cooperative party
+    aliases: [pt]
+    usage: /party <create|invite|accept|leave|kick|disband|list>
+  skills:
+    description: Open skill loadout menu
+  sa:
+    description: SkillArena commands
+  boss:
+    description: Spawn or stop Vargas boss
+    permission: skillarena.admin
+    usage: /boss <spawn|stop>
+  ultunlock:
+    description: Unlock upgraded ultimates
+    permission: skillarena.admin
+    usage: /ultunlock [player] [all|0-7]
+  ultcharge:
+    description: Set ultimate charge
+    permission: skillarena.admin
+    usage: /ultcharge [player] [0-100]
+permissions:
+  skillarena.admin:
+    default: op
